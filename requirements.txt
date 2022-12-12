@@ -1,4 +1,4 @@
-numpy==1.23.5
+numpy
 packaging==22.0
 pandas==1.5.2
 patsy==0.5.3
