@@ -26,7 +26,7 @@ RFM Package for Customer Segmentation
 Features
 --------
 
-* def rfm_score_generator(data,totalPaid, day_bought,customerID, invoiceNo = "", format_ = '%d.%m.%Y', R_w=0.15, F_w=0.28, M_w =0.57):
+* rfm_score_generator(data,totalPaid, day_bought,customerID, invoiceNo = "", format_ = '%d.%m.%Y', R_w=0.15, F_w=0.28, M_w =0.57):
    
 
     Parameters
@@ -50,11 +50,69 @@ Features
     M_w : the weight given to Monetary value to calculate RFM Score
          (Default value = 0.57)
 
-    Returns
+    Returns : 
     The RFM (dataframe) with added columns of Recency, Freqency, Monetary Ranks both normalized and not normalized, RFM Score, and the Segment the Customer belongs to, e.g Loyal customer.
     The Maximum RFM Score is 5.
-* 
-*
+
+* rfm_tree_map(data,totalPaid, day_bought,customerID, invoiceNo = "", format_ = '%d.%m.%Y', R_w=0.15, F_w=0.28, M_w =0.57, color_ = px.colors.sequential.matter):
+    
+    """
+
+    Parameters
+    ----------
+    data : the data of customers you want to segment
+        
+    totalPaid : the monetary value (quantity * unit_price)
+        
+    day_bought : the date of the purchase
+        
+    customerID : unique identifier for  each customer
+        
+    invoiceNo : unique identifier for each purchase
+         (Default value = ""), if missing take date of each purchase
+    format_ : the date format for day_bought column
+         (Default value = '%d.%m.%Y')
+    R_w : the weight given to Recency to calculate RFM Score
+         (Default value = 0.15)
+    F_w : the weight given to Frequency to calculate RFM Score
+         (Default value = 0.28)
+    M_w : the weight given to Monetary value to calculate RFM Score
+         (Default value = 0.57)
+    color_ : the colors for treemap
+         (Default value = px.colors.sequential.matter)
+
+    Returns : 
+    The RFM tree map 
+
+* rfm_pie_chart(data,totalPaid, day_bought,customerID, invoiceNo = "", format_ = '%d.%m.%Y', R_w=0.15, F_w=0.28, M_w =0.57, color_ = px.colors.sequential.matter):
+    
+    """
+
+    Parameters
+    ----------
+    data : the data of customers you want to segment
+        
+    totalPaid : the monetary value (quantity * unit_price)
+        
+    day_bought : the date of the purchase
+        
+    customerID : unique identifier for  each customer
+        
+    invoiceNo : unique identifier for each purchase
+         (Default value = ""), if missing take date of each purchase
+    format_ : the date format for day_bought column
+         (Default value = '%d.%m.%Y')
+    R_w : the weight given to Recency to calculate RFM Score
+         (Default value = 0.15)
+    F_w : the weight given to Frequency to calculate RFM Score
+         (Default value = 0.28)
+    M_w : the weight given to Monetary value to calculate RFM Score
+         (Default value = 0.57)
+    color_ : the colors for treemap
+         (Default value = px.colors.sequential.matter)
+
+    Returns : 
+    The RFM pie chart
 
 Credits
 -------
