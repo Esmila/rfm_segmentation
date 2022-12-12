@@ -1,6 +1,6 @@
 numpy
 packaging==22.0
-pandas==1.5.2
+pandas
 patsy==0.5.3
 plotly==5.11.0
 plotly-express==0.4.1
