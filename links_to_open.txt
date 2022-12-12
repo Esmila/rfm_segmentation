@@ -1,0 +1,5 @@
+https://pypi.org/project/rfm-segmentation/
+
+https://rfm-segmentation.readthedocs.io/en/latest/
+
+https://github.com/Esmila/rfm_segmentation
