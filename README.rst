@@ -11,7 +11,7 @@ RFM Package
 
 .. image:: https://readthedocs.org/projects/rfm-segmentation/badge/?version=latest
         :target: https://rfm-segmentation.readthedocs.io/en/latest/?version=latest
-        :alt: 
+        :alt: Documentation Status
 
 
 
